@@ -9,6 +9,7 @@ services:
     environment:
       - UPLOAD_FOLDER=/var/uploads
       - LOG_FOLDER=/var/log/CTFd
+      - WORKERS=4
       - DATABASE_URL=mysql+pymysql://root:ctfd@db/ctfd
     volumes:
       - .data/CTFd/logs:/var/log/CTFd
